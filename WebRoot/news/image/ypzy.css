@@ -1,0 +1,16 @@
+body{margin:0px; padding:0px;}
+.utopbg{ background:url('top_bg.jpg') repeat-x;}
+.upablicw{ margin:0 auto; width:1004px;}
+.utoptitle a{ font-size:12px; color:#333; text-decoration:none;}
+.udfooter{font-size:12px; color:#999;}
+.udfooter a{font-size:12px; color:#666666; text-decoration:none;}
+.uclasstitle{ color:#333; font-size:14px;border-bottom:1px solid #CCC;}
+.uclasstitle strong{ font-size:20px; color:#438bbd;}
+.uclasstitle span{font-size:11px;color:#bdbdbd; margin-left:3px;}
+.uqtform{ font-size:12px;}
+.uctip{ color:#090; font-size:40px;}
+.upasub{ color:#999; font-size:12px;}
+.upablicw img{ border:none;}
+.uqtform li{ list-style:none; border-bottom:1px dashed #CCCCCC;}
+.uqtform a {text-decoration:none; color:#333;}
+.newslist li{ line-height:250%; list-style:disc;}

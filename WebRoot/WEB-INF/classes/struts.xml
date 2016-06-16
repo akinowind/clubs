@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	 <package name="/" namespace="/" extends="struts-default">
+        
+        <action name="index" class="com.club.action.MemberAction" method="init">
+            <result>
+                /index.jsp
+            </result>
+            <result name="kong">
+            	/register.jsp
+            </result>
+        </action>
+      
+       
+    </package>
+	 
+	 <package name="member" namespace="/member" extends="struts-default">
+        
+        <action name="member_list" class="com.club.action.MemberAction" method="list">
+            <result>
+                /member/member_list.jsp
+            </result>
+        </action>
+         <action name="member_list2" class="com.club.action.MemberAction" method="list2">
+            <result>
+                /member/member_list2.jsp
+            </result>
+        </action>
+      	<action name="member_update" class="com.club.action.MemberAction" method="update">
+            <result>
+                /member/member_update.jsp
+            </result>
+        </action>
+        <action name="member_save" class="com.club.action.MemberAction" method="save">
+           <result>
+                /member/member_list.jsp
+            </result>
+        </action>
+         <action name="member_delete" class="com.club.action.MemberAction" method="delete">
+           <result>
+                /member/member_list.jsp
+            </result>
+        </action>
+         <action name="member_addgood" class="com.club.action.MemberAction" method="addgood">
+           <result>
+                /member/member_list.jsp
+            </result>
+        </action>
+        <action name="member_addbad" class="com.club.action.MemberAction" method="addbad">
+           <result>
+                /member/member_list.jsp
+            </result>
+        </action>
+         <action name="member_showrecord" class="com.club.action.MemberAction" method="showrecord">
+           <result>
+                /member/member_showrecord.jsp
+            </result>
+        </action>
+        <action name="member_info" class="com.club.action.MemberAction" method="info">
+           <result type="dispatcher" >
+                /success.html
+            </result>
+        </action>
+    </package>
+	
+	 <package name="place" namespace="/place" extends="struts-default">
+        
+        
+        
+        <action name="classroom_show" class="com.club.action.ClassroomAction" method="show">
+            <result>
+                /place/classroom_show.jsp
+            </result>
+        </action>
+        <action name="classroom_order" class="com.club.action.ClassroomAction" method="order">
+            <result>
+                /place/classroom_show.jsp
+            </result>
+        </action>
+        <action name="classroom_orderlist" class="com.club.action.ClassroomAction" method="orderlist">
+            <result>
+                /place/classroom_orderlist.jsp
+            </result>
+        </action>
+        <action name="classroom_pass" class="com.club.action.ClassroomAction" method="pass">
+            <result>
+                /place/classroom_orderlist.jsp
+            </result>
+        </action>
+        <action name="classroom_npass" class="com.club.action.ClassroomAction" method="npass">
+            <result>
+                /place/classroom_orderlist.jsp
+            </result>
+        </action>
+    </package>
+   <package name="project" namespace="/project" extends="struts-default">
+        
+        
+        
+        <action name="project_apply" class="com.club.action.ProjectAction" method="apply">
+            <result>
+                /project/project_apply.jsp
+            </result>
+        </action>
+         <action name="project_list" class="com.club.action.ProjectAction" method="list">
+            <result>
+                /project/project_list.jsp
+            </result>
+        </action>
+         <action name="project_pass" class="com.club.action.ProjectAction" method="pass">
+            <result>
+                /project/project_list.jsp
+            </result>
+        </action>
+        <action name="project_unpass" class="com.club.action.ProjectAction" method="unpass">
+            <result>
+                /project/project_list.jsp
+            </result>
+        </action>
+      	<action name="project_fundtotal" class="com.club.action.ProjectAction" method="fundtotal">
+            <result>
+                /project/project_apply.jsp
+            </result>
+        </action>
+    </package>
+<package name="club" namespace="/club" extends="struts-default">
+        
+        <action name="club_list" class="com.club.action.ClubAction" method="list">
+            <result>
+                /club/club_list.jsp
+            </result>
+        </action>
+      	<action name="club_update" class="com.club.action.ClubAction" method="update">
+            <result>
+                /club/club_update.jsp
+            </result>
+        </action>
+        <action name="club_save" class="com.club.action.ClubAction" method="save">
+           <result>
+                /club/club_list.jsp
+            </result>
+        </action>
+         <action name="club_delete" class="com.club.action.ClubAction" method="delete">
+           <result>
+                /club/club_list.jsp
+            </result>
+        </action>
+       	<action name="club_inf" class="com.club.action.ClubAction" method="inf">
+           <result>
+                /club/club_infshow.jsp
+            </result>
+        </action>
+        <action name="club_infshow" class="com.club.action.ClubAction" method="infshow">
+           <result>
+                /club/club_infshow.jsp
+            </result>
+        </action>
+        	<action name="club_infupdate" class="com.club.action.ClubAction" method="infshow">
+           <result>
+                /club/club_infupdate.jsp
+            </result>
+        </action>
+    </package>
+
+ <package name="news" namespace="/news" extends="struts-default">
+        
+        <action name="news_add" class="com.club.action.NewsAction" method="add">
+            <result>
+                /news/news_add.jsp
+            </result>
+        </action>
+       <action name="news_list" class="com.club.action.NewsAction" method="list">
+            <result>
+                /news/news_list.jsp
+            </result>
+        </action>
+        <action name="news_indexlist" class="com.club.action.NewsAction" method="indexlist">
+            <result>
+                /news/news_indexlist.jsp
+            </result>
+        </action>
+         <action name="news_show" class="com.club.action.NewsAction" method="show">
+            <result>
+                /news/news_show.jsp
+            </result>
+        </action>
+         <action name="news_pass" class="com.club.action.NewsAction" method="pass">
+            <result>
+                /news/news_list.jsp
+            </result>
+        </action>
+        <action name="news_unpass" class="com.club.action.NewsAction" method="unpass">
+            <result>
+                /news/news_list.jsp
+            </result>
+        </action>
+        <action name="news_ticketorder" class="com.club.action.NewsAction" method="ticketorder">
+            <result>
+                /success.html
+            </result>
+        </action>
+        <action name="news_check" class="com.club.action.NewsAction" method="check">
+        <result>
+         /news/news_check.jsp
+        </result>
+        </action>
+    </package>
+  <package name="meeting" namespace="/meeting" extends="struts-default">
+        <action name="meeting_list" class="com.club.action.MeetingAction" method="list">
+            <result>
+                /place/meeting_list.jsp
+            </result>
+        </action>
+        <action name="meeting_orderlist" class="com.club.action.MeetingAction" method="orderlist">
+            <result>
+                /place/meeting_orderlist.jsp
+            </result>
+        </action>
+        <action name="meeting_save" class="com.club.action.MeetingAction" method="save">
+            <result>
+                /news/news_add.jsp
+            </result>
+        </action>
+      	 <action name="meeting_room" class="com.club.action.MeetingAction" method="room">
+            <result>
+                /place/meeting_room.jsp
+            </result>
+        </action>
+         <action name="meeting_pass" class="com.club.action.MeetingAction" method="pass">
+            <result>
+                /place/meeting_room.jsp
+            </result>
+        </action>
+         <action name="meeting_unpass" class="com.club.action.MeetingAction" method="unpass">
+            <result>
+                /place/meeting_room.jsp
+            </result>
+        </action>
+    </package>  
+    
+</struts>

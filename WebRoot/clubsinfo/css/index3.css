@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+margin:0 auto;
+padding:0;
+width:100%;
+}
+.a1{
+	padding-top:4px;
+	height:27px;
+	background-image:url(../image1/daohangtiao.jpg);
+	width:100%;
+}
+.a1f{
+	width:900px;
+	height:30px;
+	margin:0 auto;
+	}
+.a1f a{
+	padding-left:8px;
+	margin-bottom:-40px;
+	line-height:20px;
+	text-align:center;
+	text-decoration:none; 
+	font-size:15px;
+	color:rgb(122,122,122);
+	}
+.a1f span{
+	padding-left:15px;
+	color:rgb(167,177,233);
+	font-size:16px;
+	}	
+.contenthu
+	{
+		margin:0 auto;
+		background-image:url(../image1/bg2.jpg);
+		background-repeat:no-repeat;
+		width:1078px;
+		height:600px;
+	}

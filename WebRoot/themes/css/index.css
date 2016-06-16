@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+margin:0 auto;
+padding:0;
+width:100%;
+height:674px;
+background-repeat:no-repeat;
+}
+#cont{
+	margin-top:170px;
+}
+.logo{
+	margin-left:260px;
+	height:70px;
+	width:100%;
+	float:left;
+}
+.pic{
+	margin-left:290px;
+	float:left;
+}
+#right{
+	float:right;
+	width:41.5%;
+	float:right;
+	padding-top:15px;
+}
+.carousel{position:absolute; top:450px; left:520px; z-index:999;}
+.carousel li{float:left; display:inline;}
